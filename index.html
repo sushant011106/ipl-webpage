@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL 2026 - Indian Premier League</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 50'%3E%3Ctext x='10' y='35' font-size='32' font-weight='bold' fill='%23FFD700'%3EIPL%3C/text%3E%3C/svg%3E" alt="IPL Logo">
+                <span class="logo-text">Indian Premier League</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#teams" class="nav-link">Teams</a></li>
+                <li><a href="#players" class="nav-link">Players</a></li>
+                <li><a href="#standings" class="nav-link">Standings</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>IPL 2026</h1>
+            <p>Where Cricket is Entertainment</p>
+            <button class="btn btn-primary">Watch Live</button>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- Teams Section -->
+    <section id="teams" class="teams-section">
+        <div class="container">
+            <h2 class="section-title">Teams</h2>
+            <div class="teams-grid" id="teamsGrid">
+                <!-- Teams will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Players Modal -->
+    <div id="playerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- Players Section -->
+    <section id="players" class="players-section">
+        <div class="container">
+            <h2 class="section-title">Featured Players</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Teams</button>
+                <button class="filter-btn" data-filter="CSK">Chennai Super Kings</button>
+                <button class="filter-btn" data-filter="MI">Mumbai Indians</button>
+                <button class="filter-btn" data-filter="RCB">Royal Challengers Bangalore</button>
+                <button class="filter-btn" data-filter="KKR">Kolkata Knight Riders</button>
+                <button class="filter-btn" data-filter="DC">Delhi Capitals</button>
+                <button class="filter-btn" data-filter="RR">Rajasthan Royals</button>
+                <button class="filter-btn" data-filter="SRH">Sunrisers Hyderabad</button>
+                <button class="filter-btn" data-filter="LSG">Lucknow Super Giants</button>
+                <button class="filter-btn" data-filter="GT">Gujarat Titans</button>
+                <button class="filter-btn" data-filter="PBKS">Punjab Kings</button>
+            </div>
+            <div class="players-grid" id="playersGrid">
+                <!-- Players will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Standings Section -->
+    <section id="standings" class="standings-section">
+        <div class="container">
+            <h2 class="section-title">Team Standings</h2>
+            <div class="standings-header">
+                <div class="live-indicator">
+                    <span class="live-dot"></span>
+                    <span>Live Updates</span>
+                </div>
+                <button class="refresh-btn" onclick="refreshStandings()">🔄 Refresh Now</button>
+            </div>
+            <div class="standings-table">
+                <table id="standingsTable">
+                    <thead>
+                        <tr>
+                            <th>Position</th>
+                            <th>Team</th>
+                            <th>Matches</th>
+                            <th>Won</th>
+                            <th>Lost</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <tbody id="standingsBody">
+                        <!-- Table will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="last-updated" id="lastUpdated">
+                Last updated: Loading...
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About IPL</h4>
+                    <p>The Indian Premier League is a professional Twenty20 cricket league in India.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Schedule</a></li>
+                        <li><a href="#">Results</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Twitter</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 developed by hitesh patil and mayur patil all rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="team-logos.js"></script>
+    <script src="player-photos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
