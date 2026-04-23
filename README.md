@@ -2,8 +2,6 @@
 
 A modern, realistic IPL (Indian Premier League) website with live standings, all teams, and player information.
 
-## ✨ Features
-
 ### 1. **All 10 IPL Teams**
 - Chennai Super Kings (CSK)
 - Mumbai Indians (MI)
@@ -35,14 +33,14 @@ A modern, realistic IPL (Indian Premier League) website with live standings, all
 - Responsive design (mobile, tablet, desktop)
 - Live data connection
 
-## 🚀 Getting Started
+ Getting Started
 
 1. Open `index.html` in your web browser
 2. Explore teams, players, and standings
 3. Use the "Refresh Now" button for manual updates
 4. Standings auto-refresh every 30 seconds
 
-## 📡 Live Data Connection
+ Live Data Connection
 
 ### Current Setup
 The website attempts to connect to cricket data APIs:
@@ -75,7 +73,7 @@ For production use with ESPN data:
 // This avoids CORS issues
 ```
 
-## 🎨 Customization
+ Customization
 
 ### Change Team Colors
 Edit `script.js` in the `teamsData` array:
@@ -96,14 +94,14 @@ Edit team player arrays in `teamsData`:
 { name: 'Player Name', role: 'Batter', type: 'Batter', matches: 100 }
 ```
 
-## 📱 Browser Compatibility
+ Browser Compatibility
 
 - Chrome/Edge (Latest)
 - Firefox (Latest)
 - Safari (Latest)
 - Mobile browsers (iOS Safari, Chrome Mobile)
 
-## 🐛 Troubleshooting
+ Troubleshooting
 
 **Q: Standings not updating?**
 - A: Check browser console (F12) for API errors
@@ -119,7 +117,7 @@ Edit team player arrays in `teamsData`:
 - Consider using a backend proxy service
 - Or contact the API provider for CORS support
 
-## 📊 API Response Structure Expected
+#API Response Structure Expected
 
 ```json
 {
@@ -135,7 +133,7 @@ Edit team player arrays in `teamsData`:
 }
 ```
 
-## 🔄 Auto-Refresh Logic
+# Auto-Refresh Logic
 
 The standings automatically:
 1. Fetch live data every 30 seconds
@@ -144,7 +142,7 @@ The standings automatically:
 4. Update the table
 5. Show last update time
 
-## 📝 File Structure
+# File Structure
 
 ```
 ipl webpage/
@@ -154,7 +152,7 @@ ipl webpage/
 └── README.md        # This file
 ```
 
-## 🎯 Future Enhancements
+## Future Enhancements
 
 - [ ] Live match scores
 - [ ] Match schedule and results
@@ -164,7 +162,7 @@ ipl webpage/
 - [ ] Push notifications for matches
 - [ ] User favorites/watchlist
 
-## 📞 Support
+##  Support
 
 For issues or suggestions:
 1. Check browser console (F12) for errors
@@ -172,7 +170,7 @@ For issues or suggestions:
 3. Test with fallback cached data
 4. Check internet connection
 
-## 📄 License
+##  License
 
 This project is for educational purposes. IPL is property of BCCI (Board of Control for Cricket in India).
 
